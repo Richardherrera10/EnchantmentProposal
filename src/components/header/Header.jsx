@@ -6,7 +6,7 @@ import faqBanner from "../../assets/faqBanner.jpg"
 import aboutBanner from "../../assets/will-u-marry-me.jpg"
 import servicesBanner from "../../assets/servicesBanner.jpg"
 import portfolioBanner from "../../assets/portfolioBanner.jpg"
-import contactBanner from "../../assets/faq3.jpg"
+import contactBanner from "../../assets/Faq3.jpg"
 
 function Header() {
   const [scrollPosition, setScrollPosition] = useState(0);
