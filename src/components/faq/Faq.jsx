@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import "./Faq.css";
 import Header from '../header/Header';
 import faqBkg from "../../assets/FaqBackground.svg";
-import faq1 from "../../assets/faq1.jpg";
-import faq2 from "../../assets/faq2.jpg";
-import faq3 from "../../assets/faq3.jpg";
+import faq1 from "../../assets/Faq1.jpg";
+import faq2 from "../../assets/Faq2.jpg";
+import faq3 from "../../assets/Faq3.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
 
