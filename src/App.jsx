@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Route>
-    )
+    ), { basename: import.meta.env.DEV ? '/' : '/EnchantmentProposal/' }
   )
   return (
       <>
