@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: '/EnchantmentProposal',
+    base: '/',
   }
 
   if (command !== 'serve') {
@@ -15,3 +15,5 @@ export default defineConfig(({ command }) => {
 
   return config
 })
+
+
