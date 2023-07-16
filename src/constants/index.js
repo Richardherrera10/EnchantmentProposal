@@ -1,0 +1,1 @@
+// constants for titles, text, prompts, that will remain the same throught the website

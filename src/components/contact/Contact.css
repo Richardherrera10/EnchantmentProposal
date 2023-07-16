@@ -1,0 +1,97 @@
+.contactContainer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #242424;
+  align-items: center;
+}
+
+.lefPictures {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-end;
+  margin:1%;
+}
+
+  .lefPictures img:nth-child(odd) {
+    margin-right: auto;
+  }
+.rightPictures {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-end;
+  margin:1%;
+}
+.rightPictures img:nth-child(odd) {
+    margin-right: auto;
+  }
+  .contactForm {
+    /* Remove the height property to allow the form to grow dynamically */
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start; /* Align items at the top of the grid */
+    padding: 20px;
+  }
+  
+  .formColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust the gap value as desired */
+  }
+  
+  .formColumn > div {
+    margin-bottom: 0; /* Remove the default margin-bottom */
+    color: #000;
+    font-family: Noto Serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .formColumn.fullWidth {
+    grid-column: 1 / span 2;
+  }
+  
+  .centeredColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / span 2;
+    text-align: center; /* Add text-align: center */
+  }
+  .centeredColumn textarea {
+    text-align: center;
+  }
+  .centeredColumn button {
+    margin: 0 auto; /* Center the submit button horizontally */
+    border-radius: 50px;
+    background: #242424;  
+    color: white; 
+
+  }
+  .formColumn.fullWidth textarea {
+    width: 90%; /* Set the width to 100% to cover the whole available space */
+  }
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="date"],
+.contactForm input[type="tel"],
+.contactForm input[type="number"],
+.contactForm select,
+.contactForm textarea {
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #FFF;
+  color: #000;
+  font-family: Noto Serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }

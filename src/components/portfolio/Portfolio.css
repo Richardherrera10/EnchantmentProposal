@@ -1,0 +1,104 @@
+.portfolio-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Set a minimum height to cover the entire viewport */
+    background-color: #242424;
+    overflow: hidden; /* Hide overflow to prevent white space */
+  }
+  .portfolio-container h1{
+    color: #FFF;
+text-align: center;
+font-family: Cormorant;
+font-size: 80px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .portfolio-options {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+  }
+  
+  .portfolio-option {
+    cursor: pointer;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    color: white;
+  }
+  
+  .portfolio-option.active {
+    border-bottom-color: white;
+  }
+  
+  .line-container {
+    width: 600px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .line {
+    position: absolute;
+    top: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  .line.All {
+    width: 100%;
+  }
+  
+  .line.Engagement {
+    width: 20%;
+  }
+  
+ .line.DateNight {
+  width: 40%;
+}
+  
+  .line.Promposal {
+    width: 60%;
+  }
+  
+  .line.Anniversary {
+    width: 80%;
+  }
+
+  .portfolio-images {
+    position: relative;
+    margin-top: 150px;
+
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .image-grid img {
+    width: 700px;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .white-rectangle {
+    width: calc(65%);
+    background-color: white;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    margin-bottom: -5%; 
+    height: auto; 
+    bottom: 0; 
+  }
