@@ -27,6 +27,12 @@ const Home = () => {
                     {src: dateNight, txt:"Date Night.", link:"datenight"}, 
                     {src: promposal, txt: "Promposal.", link:"promposal"}, 
                     {src: anniversary, txt: "Anniversary.", link:"anniversary"}]
+
+  const testimonials = [{pic: myImage, description: "Description of service.", author:"engagement", service:"Anniversary"}, 
+                        {pic: myImage, description: "Description of service.", author:"engagement", service:"Anniversary"},
+                        {pic: myImage, description: "Description of service.", author:"engagement", service:"Anniversary"}  
+                    ]
+
     return (
     <>
      
@@ -48,7 +54,7 @@ const Home = () => {
         </div>
        
         <div className='black-background'>
-              {/* Content of your component */}
+             
               <h1> OUR WORKFLOW</h1>
               <div className='ring'>
                 <img src={ring} alt="Picture"/>
@@ -63,55 +69,30 @@ const Home = () => {
            
               <h1>OUR SERVICES</h1>
                 <ImageGrid imageSrc={imageSrc}/>
-                {/* <div className="home-image-grid">
-                  {imageSrc.map((image, index) => (
-                    <div className="image-wrapper" key={index}>
-                      <div
-                        className={`image-container ${hoveredIndex === index ? 'hovered' : ''}`}
-                        onMouseEnter={() => handleMouseEnter(index)}
-                        onMouseLeave={handleMouseLeave}
-                      >
-                        <img src={image.src} alt={image.txt} />
-                      </div>
-                      <h2>{image.txt}</h2>
-                    </div>
-                  ))}
-                </div> */}
-                
 
         </div>
         
         
-      <div className="container-testimonial">
-        <div className="title-container">
+      <div className="home-container-testimonial">
+        <div className="home-title-container">
           <h2 className="title">WORDS ON</h2>
         </div>
-        <div className="testimonial">
+        <div className="home-testimonial">
           <img src={golden} alt="Example SVG" className="small-svg" />
           <h2 className="subtitle">THE STREET</h2>
-          <div className='testimonial-cards'>
-            {/* put into array and use map */}
-              <div className='card'>
-                <img src={myImage} alt="Picture"/>
+          <div className='home-testimonial-cards'>
+              {testimonials.map((testimonial, index) => (
+                <div className='home-card' key={index}>
+                <img src={testimonial.pic} alt="Picture"/>
                 <img src={golden} alt="Example SVG" />
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <span className='span1'> Kyle</span>
-                <span className='span2'> Anniversary</span>
+                <p> {testimonial.description}</p>
+                <span className='span1'> {testimonial.author}</span>
+                <span className='span2'> {testimonial.service}</span>
               </div>
-              <div className='card'>
-                <img src={myImage} alt="Picture"/>
-                <img src={golden} alt="Example SVG" />
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <span className='span1'> Kyle</span>
-                <span className='span2'> Anniversary</span>
-              </div>
-              <div className='card'>
-                <img src={myImage} alt="Picture"/>
-                <img src={golden} alt="Example SVG" />
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <span className='span1'> Kyle</span>
-                <span className='span2'> Anniversary</span>
-              </div>
+                
+              ))}
+              
+          
           </div>
       
       </div>
