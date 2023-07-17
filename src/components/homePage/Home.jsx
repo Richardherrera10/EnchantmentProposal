@@ -28,9 +28,9 @@ const Home = () => {
                     {src: promposal, txt: "Promposal.", link:"promposal"}, 
                     {src: anniversary, txt: "Anniversary.", link:"anniversary"}]
 
-  const testimonials = [{pic: myImage, description: "Description of service.", author:"engagement", service:"Anniversary"}, 
-                        {pic: myImage, description: "Description of service.", author:"engagement", service:"Anniversary"},
-                        {pic: myImage, description: "Description of service.", author:"engagement", service:"Anniversary"}  
+  const testimonials = [{pic: myImage, description: "Description of service.", author:"Kyle X", service:"Anniversary"}, 
+                        {pic: myImage, description: "Description of service.", author:"Kyle X", service:"Anniversary"},
+                        {pic: myImage, description: "Description of service.", author:"Kyle X", service:"Anniversary"}  
                     ]
 
     return (
