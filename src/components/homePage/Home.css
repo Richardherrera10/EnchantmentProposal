@@ -258,7 +258,7 @@ line-height: normal;
   font-weight: 100;
   line-height: normal;
 }
-
+/* 
 .ready {
   width: 100%;
   position: relative;
@@ -266,7 +266,7 @@ line-height: normal;
 
 .background {
   width: 100%;
-  padding-top: 35%; /* Adjust as needed to control the aspect ratio */
+  padding-top: 35%; 
   background-image: url("../../assets/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -343,4 +343,4 @@ line-height: normal;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
+} */

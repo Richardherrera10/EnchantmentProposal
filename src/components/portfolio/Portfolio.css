@@ -6,6 +6,7 @@
     min-height: 100vh; /* Set a minimum height to cover the entire viewport */
     background-color: #242424;
     overflow: hidden; /* Hide overflow to prevent white space */
+ 
   }
   .portfolio-container h1{
     color: #FFF;

@@ -10,7 +10,7 @@ import dateNight from '../../assets/date-night.jpg';
 import engagement from '../../assets/Engagement.jpg';
 import promposal from '../../assets/promposal.png';
 import mission from "../../assets/missionIMG.jpg"
-
+import Footer from '../footer/Footer';
 const Portfolio = () => {
   const [activeOption, setActiveOption] = useState('All');
   const [lineWidth, setLineWidth] = useState(0);
@@ -102,12 +102,14 @@ const Portfolio = () => {
           <div className="white-rectangle">
             
           </div>
-     
+          {/* shouldn't be like this fix it asap */}
+     <h1>hola</h1>
         </div>
-        <h1> Footer</h1>
+        
     
       
     </div>    
+    <Footer/>
     </>
 
   );

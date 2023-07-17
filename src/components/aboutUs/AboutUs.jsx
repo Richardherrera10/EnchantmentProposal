@@ -4,6 +4,7 @@ import "./AboutUs.css"
 import missionImg from "../../assets/missionIMG.jpg"
 import backgroundSvg from "../../assets/aboutUsBackground9.svg"
 import blessy from "../../assets/aboutMe.jpg"
+import Footer from '../footer/Footer'
 function AboutUs() {
 
 const aboutUsInfo = [{title: "OUR MISSION", description: "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT ..",
@@ -44,9 +45,9 @@ const aboutUsInfo = [{title: "OUR MISSION", description: "LOREM IPSUM DOLOR SIT 
                     <img className='' src={blessy}/>
                 </div>
             </div>
-            
+            <Footer/>
         </div>
-
+        
     </>
   
   )

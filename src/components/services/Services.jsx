@@ -13,6 +13,7 @@ import rightArrow from "../../assets/rightArrow.svg"
 import leftArrow from "../../assets/leftArrow.svg"
 import ImageGrid from '../imageGrid/ImageGrid';
 import { Link, Outlet, useLocation } from 'react-router-dom';
+import Footer from '../footer/Footer';
 function Services() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [currentContent, setCurrentContent] = useState(0);
@@ -111,7 +112,7 @@ function Services() {
       </div>
  </div>
 
-
+<Footer/>
     </>
   );
 }

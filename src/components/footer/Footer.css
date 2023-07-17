@@ -1,0 +1,87 @@
+
+.ready {
+    width: 100%;
+    position: relative;
+  }
+  
+  .background-footer {
+    width: 100%;
+    padding-top: 35%; /* Adjust as needed to control the aspect ratio */
+    background-image: url("../../assets/background.svg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    gap: 0px;
+  }
+  
+  .centered h1 {
+    margin: 0;
+  }
+  .centered p {
+    margin:1;
+    color: #FFF;
+    font-size: 20px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .ready-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 1188px;
+    height: 340px;
+    flex-shrink: 0;
+    border-radius: 48px;
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 48px;
+    background: rgba(255, 255, 255, 0.50);
+  }
+  
+  .ready-title h1{
+    text-align: center;
+    margin: 0;
+    font-size: 80px;
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .start-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 313px;
+    height: 68px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #242424;
+  }
+  
+  .start-btn span{
+    color: white;
+  }
+  .start-btn span{
+    font-size: 30px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }

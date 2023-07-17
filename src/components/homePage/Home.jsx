@@ -11,6 +11,8 @@ import promposal from "../../assets/promposal.png"
 import golden from "../../assets/golden.svg"
 import background from "../../assets/background.svg"
 import ImageGrid from '../imageGrid/ImageGrid'
+import { Link, Outlet, useLocation } from 'react-router-dom';
+import Footer from '../footer/Footer'
 const Home = () => {
 
 
@@ -96,9 +98,10 @@ const Home = () => {
           </div>
       
       </div>
+      <Footer/>
     </div>
 
-    <div className='ready'>
+    {/* <div className='ready'>
     
         <div className="background"></div>
       <div className="centered">
@@ -112,9 +115,9 @@ const Home = () => {
         </div>
         <p>Enchantment Proposal</p>
       </div>
-    </div>
+    </div> */}
 
-        
+       
 
       </div>
 

@@ -7,7 +7,7 @@ import faq2 from "../../assets/Faq2.jpg";
 import faq3 from "../../assets/Faq3.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
-
+import Footer from '../footer/Footer';
 const faqData = {
   title1: [
     {
@@ -125,6 +125,7 @@ function Faq() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
